@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Developer Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <div class="logo" style="font-weight:700; font-size:1.5rem; color:#1e90ff;">MyPortfolio</div>
+      <ul id="nav-links">
+        <li class="nav-item active" data-target="home">Home</li>
+        <li class="nav-item" data-target="about">About</li>
+        <li class="nav-item" data-target="certificates">Certificates & Internships</li>
+        <li class="nav-item" data-target="projects">Projects</li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Home Page -->
+    <section id="home" class="page active">
+      <div class="profile-pic">
+        <img src="logo.png.jpeg" alt="Developer Picture" />
+      </div>
+      <h1>Harshit Dubey</h1>
+      <div class="social-icons" aria-label="Social media links">
+        <a href="https://www.instagram.com/codesphereai?igsh=bTZndHNtdW9xcnp3" target="_blank" rel="noopener" class="instagram" aria-label="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+     
+        <a href="https://www.linkedin.com/in/harshit-dubey-codecraft?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" class="linkedin" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Harshitdubey-lab" target="_blank" rel="noopener" class="github" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </section>
+    <div class="cv-container">
+      <button class="show-cv-btn" onclick="showCV()">View My CV</button>
+  
+      <div class="cv-content" id="cvContent">
+       
+        <img src="RESUME.png" alt="My CV" class="cv-image">
+        <br>
+        <a href="RESUME.png" download="HARSHIT_DUBEY_CV.jpg" class="download-btn">Download CV</a>
+      </div>
+    </div>
+
+    <!-- About Page -->
+    <section id="about" class="page" aria-label="About me">
+      <h2>About Me</h2>
+      <p>Hello! I'm Harshit Dubey, a passionate web developer with expertise in creating beautiful and functional websites. My skill set includes HTML, CSS, JavaScript, React, and backend technologies.</p>
+      <p>I love turning ideas into reality using clean and efficient code. I'm always eager to learn new technologies and improve my craft.</p>
+      <p>.</p>
+    </section>
+
+    <!-- Certificates and Internships -->
+    <section id="certificates" class="page" aria-label="Certificates and internships">
+      <h2>Certificates & Internships</h2>
+      <div class="cards-container">
+        <div class="card" tabindex="0">
+          <h3>Front-End Web Development Certification</h3>
+          <p>Completed an intensive course on frontend development including HTML5, CSS3, JavaScript, and responsive design.</p>
+        </div>
+        <div class="card" tabindex="0">
+          <h3>JavaScript Algorithms & Data Structures</h3>
+          <p>Deep dive into algorithms, problem solving, and data structures in JavaScript.</p>
+          
+        </div>
+        <div class="card" tabindex="0">
+          <h3>Internship at Tech Solutions Inc.</h3>
+          <p>Worked as a web development intern focusing on full stack projects using React and Node.js.</p>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="page" aria-label="Projects showcase">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" tabindex="0">
+          <img src="amazon.jpeg"Project 1 thumbnail" class="project-thumb" />
+          <div class="project-info">
+            <div class="project-title">Portfolio Website</div>
+            <div class="project-desc">A responsive and modern portfolio website showcasing my skills and projects.</div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/Harshitdubey-lab/Amazon" target="_blank" rel="noopener">Code</a>
+              <a href="inkedin.com/in/harshit-dubey-codecraft/recent-activity/all/ target="_blank" rel="noopener">Image</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" tabindex="0">
+          <img src="blinkit.jpeg" alt="Project 2 thumbnail" class="project-thumb" />
+          <div class="project-info">
+            <div class="project-title">E-commerce Site <br> (Amazon clone)</div>
+            <div class="project-desc">An e-commerce platform built with React and Firebase, featuring cart and payment integration.</div>
+            <div class="project-links">
+             
+              <a href="https://github.com/Harshitdubey-lab/Blinkit-clone" target="_blank" rel="noopener">Code</a>
+              <a href="https://www.linkedin.com/in/harshit-dubey-codecraft/recent-activity/all/" target="_blank" rel="noopener">Image</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" tabindex="0">
+          <img src="login.png" alt="Project 3 thumbnail" class="project-thumb" />
+          <div class="project-info">
+            <div class="project-title">Chat Application</div>
+            <div class="project-desc">Real-time chat app using WebSockets and Node.js backend with React frontend.</div>
+            <div class="project-links">
+              <a href="https://www.instagram.com/reel/DI-rebdv1C5/?igsh=NGl1MGN6cXh0cWxi" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/Harshitdubey-lab/Loginpage" target="_blank" rel="noopener">Code</a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="project-card" tabindex="0">
+          <img src="school.jpeg" alt="Project 4 thumbnail" class="project-thumb" />
+          <div class="project-info">
+            <div class="project-title">Chat Application</div>
+            <div class="project-desc">Real-time chat app using WebSockets and Node.js backend with React frontend.</div>
+            <div class="project-links">
+              <a href="https://www.instagram.com/reel/DI8U_SyvJ1g/?igsh=MXNuM20zOGx6NzFnbA==" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/Harshitdubey-lab/school-website" target="_blank" rel="noopener">Code</a>
+              <a href="https://www.linkedin.com/in/harshit-dubey-codecraft/"_blank" rel="noopener">Image</a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="project-card" tabindex="0">
+          <img src="sportify.jpeg" alt="Project 4 thumbnail" class="project-thumb" />
+          <div class="project-info">
+            <div class="project-title">Chat Application</div>
+            <div class="project-desc">Real-time chat app using WebSockets and Node.js backend with React frontend.</div>
+            <div class="project-links">
+              <a href="https://www.instagram.com/reel/DI8U_SyvJ1g/?igsh=MXNuM20zOGx6NzFnbA==" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/Harshitdubey-lab/Spotify-clone" target="_blank" rel="noopener">Code</a>
+              <a href="inkedin.com/in/harshit-dubey-codecraft/recent-activity/all/ target="_blank" rel="noopener">Image</a>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function showCV() {
+      document.getElementById('cvContent').style.display = 'block'
+    };
+    </script>
+</body>
+</html>
