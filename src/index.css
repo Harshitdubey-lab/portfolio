@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-graphite text-brand-text font-sans antialiased overflow-x-hidden;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-brand-graphite;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-border rounded;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-brand-textMuted;
+  }
+}
+
+.bg-noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+}
